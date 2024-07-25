@@ -3,7 +3,7 @@ from pydantic import BaseModel
 import joblib
 from typing import Dict
 
-model = joblib.load('api/model.pkl')
+model = joblib.load('model.pkl')
 
 class InputData(BaseModel):
     Category: str
